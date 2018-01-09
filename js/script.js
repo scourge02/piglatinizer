@@ -6,11 +6,17 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
-
-
-
-});
+	
+	$("button").click(function(){
+	    var message=$("input").val();
+	    var piglatin = ( ay);
+	    $("#message").text(pigLatin);
+	    
+	});
+    
+	function piglatin(word){
+		return word + "ay";    
+	}
 
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
