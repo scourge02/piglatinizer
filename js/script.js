@@ -18,6 +18,10 @@ $( document ).ready(function() {
 		return word + "ay";    
 	}
 
+	function sentenceToPigLatin(sentence) {
+	var words = sentence.split("ay");
+	console.log(words);
+	}
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
