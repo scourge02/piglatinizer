@@ -6,9 +6,13 @@
 
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
+	for (var count= 2;count< 6;count=count+ 2){
+		console.log(count);
+	}
 	
 	$("button").click(function(){
 	    var message=$("input").val();
+	    sentenceToPigLatin(message);
 	    var piglatin = ( ay);
 	    $("#message").text(pigLatin);
 	    
@@ -19,9 +23,14 @@ $( document ).ready(function() {
 	}
 
 	function sentenceToPigLatin(sentence) {
-	var words = sentence.split("ay");
-	console.log(words);
+		var words = sentence.split(" ");
+		console.log(words.length);
+		for (var i = 0;i< words.length;i++ ){
+			console.log(words);
+		}
+
 	}
+});
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
